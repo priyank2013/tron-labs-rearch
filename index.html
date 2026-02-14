@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tron Labs | Data Foundry for Robotics Training</title>
+    <meta
+      name="description"
+      content="Tron Labs is a robotics data foundry. We collect multimodal data from factories and real-world environments, label it with precision, and deliver high-modality datasets ready for AI training."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="hero-video-bg" aria-hidden="true">
+      <!-- VIDEO_REPLACE_START: first-screen background video source -->
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="https://build.ai/center.mp4" type="video/mp4" />
+        <source src="assets/videos/tron-ai-sample.mp4" type="video/mp4" />
+      </video>
+      <!-- VIDEO_REPLACE_END -->
+      <div class="hero-video-overlay"></div>
+    </div>
+    <header class="site-header">
+      <a class="logo" href="#" aria-label="Tron Labs home">
+        <svg class="logo-mark" viewBox="0 0 120 120" role="img" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="10" y="10" width="24" height="24" rx="4" />
+            <rect x="50" y="10" width="24" height="24" rx="4" />
+            <rect x="10" y="48" width="24" height="24" rx="4" />
+            <rect x="50" y="48" width="24" height="24" rx="4" />
+            <rect x="10" y="86" width="24" height="24" rx="4" />
+            <rect x="50" y="86" width="24" height="24" rx="4" />
+            <line x1="34" y1="22" x2="50" y2="22" />
+            <line x1="34" y1="60" x2="50" y2="60" />
+            <line x1="62" y1="34" x2="62" y2="48" />
+            <line x1="22" y1="72" x2="22" y2="86" />
+            <line x1="62" y1="72" x2="62" y2="86" />
+          </g>
+        </svg>
+        <span class="logo-text">Tron Labs</span>
+      </a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#datasets">Datasets</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Data Foundry for Robotics</p>
+        <h1>
+          Multimodal training data built for <span>real-world robotic intelligence</span>
+        </h1>
+        <p class="hero-copy">
+          Tron Labs captures data in factories, warehouses, and unstructured environments,
+          labels it at scale, and delivers high-modality datasets optimized for robust AI
+          training pipelines.
+        </p>
+        <div class="hero-cta">
+          <a class="button" href="#contact">Start a Dataset Program</a>
+          <a class="button button-ghost" href="#services">Explore Capabilities</a>
+        </div>
+        <div class="hero-stats">
+          <article>
+            <h3>50M+</h3>
+            <p>frames and sensor events processed</p>
+          </article>
+          <article>
+            <h3>8+</h3>
+            <p>modalities fused per deployment</p>
+          </article>
+          <article>
+            <h3>99.2%</h3>
+            <p>annotation QA consistency</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="panel">
+        <div class="panel-header">
+          <p class="eyebrow">What We Provide</p>
+          <h2>End-to-end robotics data operations</h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Field Data Collection</h3>
+            <p>
+              Instrumented capture in active production environments across RGB, depth,
+              thermal, LiDAR, audio, and telemetry streams.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Precision Annotation</h3>
+            <p>
+              Task-specific ontology design with expert-in-the-loop labeling for
+              manipulation, navigation, safety, and quality inspection workflows.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Training-Ready Delivery</h3>
+            <p>
+              Structured dataset packaging, metadata schemas, and validation reports ready
+              for simulation, foundation model fine-tuning, and production retraining.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="process" class="panel split">
+        <div>
+          <p class="eyebrow">Our Workflow</p>
+          <h2>From raw sensor capture to model-ready signal</h2>
+        </div>
+        <ol>
+          <li>
+            <h3>01. Scope & Instrument</h3>
+            <p>Define target behaviors, edge cases, and modality stack per robotics use case.</p>
+          </li>
+          <li>
+            <h3>02. Capture & Curate</h3>
+            <p>Deploy in environment, collect synchronized streams, and perform quality filtering.</p>
+          </li>
+          <li>
+            <h3>03. Label & Verify</h3>
+            <p>Run multilayer annotation with active QA and consistency checks for every batch.</p>
+          </li>
+          <li>
+            <h3>04. Deliver & Iterate</h3>
+            <p>Ship training packages with schema docs and continuous refresh for model drift.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="datasets" class="panel spotlight">
+        <div>
+          <p class="eyebrow">High Modality Data</p>
+          <h2>Built for modern AI systems</h2>
+          <p>
+            We blend temporal, spatial, and contextual signals so your models train on
+            realistic complexity—not simplified lab assumptions.
+          </p>
+        </div>
+        <ul>
+          <li>RGB + depth + LiDAR scene synchronization</li>
+          <li>Robot state, control logs, and sensor calibration metadata</li>
+          <li>Object, action, trajectory, and anomaly annotations</li>
+          <li>Flexible export formats for common ML toolchains</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Build your next robotics dataset with Tron Labs</h2>
+        <p>
+          Partner with a focused team that understands collection at the edge, annotation at
+          scale, and delivery for production AI.
+        </p>
+        <a class="button" href="mailto:hello@mytronlabs.com">Contact Tron Labs</a>
+      </section>
+    </main>
+  </body>
+</html>
