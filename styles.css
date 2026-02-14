@@ -32,6 +32,47 @@ body {
   z-index: -1;
 }
 
+.floating-video {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: min(26vw, 340px);
+  aspect-ratio: 16 / 10;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  border: 1px solid rgba(106, 228, 255, 0.45);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45), 0 0 22px rgba(106, 228, 255, 0.22);
+  background: rgba(8, 12, 24, 0.8);
+  z-index: 0;
+  pointer-events: none;
+  animation: float-panel 8s ease-in-out infinite;
+}
+
+.floating-video::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(8, 12, 24, 0.05), rgba(8, 12, 24, 0.55));
+  z-index: 2;
+}
+
+.floating-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.05);
+}
+
+@keyframes float-panel {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .site-header {
   max-width: 1120px;
   margin: 0 auto;
@@ -64,6 +105,8 @@ main {
   max-width: 1120px;
   margin: 0 auto;
   padding: 1rem 1.25rem 4rem;
+  position: relative;
+  z-index: 1;
 }
 
 .hero {
@@ -253,5 +296,11 @@ ol li {
   .split,
   .spotlight {
     grid-template-columns: 1fr;
+  }
+
+  .floating-video {
+    width: min(58vw, 280px);
+    right: 1rem;
+    bottom: 1rem;
   }
 }
