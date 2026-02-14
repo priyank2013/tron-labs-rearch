@@ -79,15 +79,29 @@ body {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #78f2ff;
+  text-decoration: none;
+}
+
+.logo-mark {
+  width: 2.1rem;
+  height: 2.1rem;
+  filter: drop-shadow(0 0 10px rgba(106, 228, 255, 0.35));
+}
+
+.logo-text {
+  color: var(--text);
   font-weight: 800;
   letter-spacing: 0.03em;
-  color: var(--text);
-  text-decoration: none;
 }
 
 nav {
   display: flex;
   gap: 1.2rem;
+  margin-left: auto;
 }
 
 nav a {
