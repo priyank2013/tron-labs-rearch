@@ -36,16 +36,44 @@ body {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
-  width: min(26vw, 340px);
-  aspect-ratio: 16 / 10;
+  width: min(34vw, 460px);
+  aspect-ratio: 16 / 9;
   border-radius: 0.9rem;
   overflow: hidden;
   border: 1px solid rgba(106, 228, 255, 0.45);
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45), 0 0 22px rgba(106, 228, 255, 0.22);
   background: rgba(8, 12, 24, 0.8);
-  z-index: 0;
+  z-index: 4;
   pointer-events: none;
   animation: float-panel 8s ease-in-out infinite;
+  backdrop-filter: blur(1px);
+}
+
+
+.floating-video-label {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #d9f7ff;
+  background: rgba(8, 13, 24, 0.62);
+  border: 1px solid rgba(106, 228, 255, 0.45);
+  border-radius: 999px;
+  padding: 0.2rem 0.5rem;
+  z-index: 3;
+}
+
+.floating-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(106, 228, 255, 0.18), rgba(75, 160, 255, 0.08), rgba(106, 228, 255, 0.18));
+  background-size: 220% 220%;
+  mix-blend-mode: screen;
+  z-index: 1;
+  animation: shimmer 7s linear infinite;
 }
 
 .floating-video::before {
@@ -61,6 +89,15 @@ body {
   height: 100%;
   object-fit: cover;
   filter: saturate(1.05) contrast(1.05);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 @keyframes float-panel {
@@ -299,7 +336,7 @@ ol li {
   }
 
   .floating-video {
-    width: min(58vw, 280px);
+    width: min(70vw, 320px);
     right: 1rem;
     bottom: 1rem;
   }

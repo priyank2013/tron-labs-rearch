@@ -19,15 +19,13 @@
   <body>
     <div class="bg-grid" aria-hidden="true"></div>
     <div class="floating-video" aria-hidden="true">
-      <!-- Placeholder sample video. Replace this src with your repo-hosted brand video later. -->
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="metadata"
-        src="https://cdn.coverr.co/videos/coverr-robotic-arm-automation-3874/1080p.mp4"
-      ></video>
+      <span class="floating-video-label">AI sample loop</span>
+      <!-- VIDEO_REPLACE_START: replace these <source> paths with your own video file -->
+      <video autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=60">
+        <source src="https://build.ai/center.mp4" type="video/mp4" />
+        <source src="assets/videos/tron-ai-sample.mp4" type="video/mp4" />
+      </video>
+      <!-- VIDEO_REPLACE_END -->
     </div>
     <header class="site-header">
       <a class="logo" href="#">Tron Labs</a>
